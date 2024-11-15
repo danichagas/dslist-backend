@@ -5,12 +5,8 @@
 This is a Rest API, where the user will be able to see the main games and all their information, such as type of platform, year, image, score, etc...
 This API was developed with game lovers in mind.
 
-<br>
-
 ## Project domain model
 <img src="imgs/dslist-model.png">
-
-<br>
 
 ## Layered pattern
 <img src="imgs/Captura de tela 2024-11-15 005531.png">
@@ -23,8 +19,6 @@ This API was developed with game lovers in mind.
 - H2 Database
 - Docker Compose
 
-<br>
-
 ## Features
 - **Controllers**: Responsible for receiving and interpreting HTTP requests, and for calling the appropriate functions of the corresponding services.
 
@@ -35,8 +29,6 @@ This API was developed with game lovers in mind.
 - **DTOs**: Responsible for returning customized data with as little information as possible.
 
 - **Services**: Responsible for making the application talk to different applications and interact with them.
-
-<br>
 
 ## API running on Postman
 <img src="imgs/Captura de tela 2024-11-14 163724.png">
