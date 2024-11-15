@@ -1,6 +1,5 @@
 package com.danichagas.dslist.controllers;
 
-import com.danichagas.dslist.dto.GameDTO;
 import com.danichagas.dslist.dto.GameListDTO;
 import com.danichagas.dslist.dto.GameMinDTO;
 import com.danichagas.dslist.services.GameListService;
@@ -20,9 +19,18 @@ public class GameListController {
     @Autowired
     private GameListService gameListService;
 
+    @Autowired
+    private GameService gameService;
+
     @GetMapping
     public List<GameListDTO> findAll() {
        List<GameListDTO> result =  gameListService.findAllGames();
        return result;
+    }
+
+    @GetMapping(value = "/{listId}/games")
+    public List<GameMinDTO> findByList(@PathVariable Long listId) {
+        List<GameMinDTO> result =  gameService.findByList(listId);
+        return result;
     }
 }
