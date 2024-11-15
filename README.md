@@ -1,5 +1,4 @@
 # DSlist - Game Collection and Lists 🎮
-<br>
 
 ## About project 👇🏾
 This is a Rest API, where the user will be able to see the main games and all their information, such as type of platform, year, image, score, etc...
